@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Обратная связь</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <div class="form">
+        <h1>Форма обратной связи</h1>
+        <form id="form" action="send.php" method="post" enctype="multipart/form-data">
+            <input data-empty="Пустое поле" type="text" name="fullName" placeholder="Введите ФИО" class="textInput"/>
+            <input data-empty="Пустое поле" data-notformated="Неверный формат" type="email" name="email"
+                   placeholder="Введите email" class="textInput"/>
+            <input data-empty="Пустое поле" data-notformated="Неверный формат" type="tel" name="telNumber"
+                   placeholder="Введите телефон" class="textInput"/>
+            <textarea data-empty="Пустое поле" name="comment"
+                      placeholder="Введите комментарий"></textarea>
+            <input data-empty="Пустое поле" type="file" name="file" value="Выберите файл" class="btn">
+            <input type="submit" value="Отправить" class="btn" id="submitBtn"/>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
